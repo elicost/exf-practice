@@ -1,0 +1,16 @@
+# Node
+node_modules/
+
+# Sass cache
+.sass-cache/
+*.css.map
+
+# Compiled CSS (we'll commit the compiled file — adjust if you prefer not to)
+# dist/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/

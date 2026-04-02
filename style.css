@@ -1,0 +1,18 @@
+/*
+Theme Name: ExF Practice
+Author: Eli Cost
+Description: Classic WordPress theme with traditional ACF and Sass. Built for ExF agency ramp-up.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+Text Domain: exf-theme
+*/
+
+/* Base styles — Sass pipeline replaces this on Day 2 */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
