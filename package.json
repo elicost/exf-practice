@@ -1,0 +1,25 @@
+{
+  "name": "exf-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass sass/main.scss css/main.css --watch",
+    "sass:build": "sass sass/main.scss css/main.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elicost/exf-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/elicost/exf-practice/issues"
+  },
+  "homepage": "https://github.com/elicost/exf-practice#readme",
+  "devDependencies": {
+    "sass": "^1.98.0"
+  }
+}

@@ -1,0 +1,21 @@
+@use 'variables' as *;
+
+.site-footer {
+    background-color: $color-dark;
+    color: $color-light;
+    padding: $space-lg 0;
+    margin-top: $space-xl;
+
+    &__inner {
+        max-width: $container-max-width;
+        margin: 0 auto;
+        padding: 0 $container-padding;
+        text-align: center;
+    }
+
+    p {
+        margin: 0;
+        font-size: $font-size-sm;
+        color: lighten($color-dark, 60%);
+    }
+}

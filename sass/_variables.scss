@@ -1,0 +1,35 @@
+// Colors
+$color-primary: #2d6a4f;
+$color-secondary: #52b788;
+$color-dark: #1b1b1b;
+$color-light: #f8f9fa;
+$color-white: #ffffff;
+$color-border: #e0e0e0;
+
+// Typography
+$font-primary: 'Georgia', serif;
+$font-secondary: 'Helvetica Neue', Arial, sans-serif;
+
+$font-size-sm: 0.875rem;   // 14px
+$font-size-base: 1rem;     // 16px
+$font-size-md: 1.25rem;    // 20px
+$font-size-lg: 1.5rem;     // 24px
+$font-size-xl: 2rem;       // 32px
+$font-size-xxl: 3rem;      // 48px
+
+// Spacing scale
+$space-xs: 0.25rem;   // 4px
+$space-sm: 0.5rem;    // 8px
+$space-md: 1rem;      // 16px
+$space-lg: 2rem;      // 32px
+$space-xl: 4rem;      // 64px
+
+// Breakpoints
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+$bp-wide: 1280px;
+
+// Layout
+$container-max-width: 1200px;
+$container-padding: $space-md;

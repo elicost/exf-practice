@@ -1,0 +1,46 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.hero {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: $space-xl 0;
+    text-align: center;
+
+    &__heading {
+        font-family: $font-primary;
+        font-size: $font-size-xxl;
+        margin: 0 0 $space-md;
+        line-height: 1.2;
+
+        @include respond-to('tablet') {
+            font-size: $font-size-xl;
+        }
+    }
+
+    &__subheading {
+        font-size: $font-size-md;
+        margin: 0 0 $space-lg;
+        opacity: 0.9;
+
+        @include respond-to('tablet') {
+            font-size: $font-size-base;
+        }
+    }
+
+    &__cta {
+        display: inline-block;
+        background-color: $color-white;
+        color: $color-primary;
+        padding: $space-sm $space-lg;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: $font-size-base;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $color-light;
+            text-decoration: none;
+        }
+    }
+}

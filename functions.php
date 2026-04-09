@@ -13,7 +13,7 @@ add_action( 'after_setup_theme', 'exf_theme_setup' );
 function exf_enqueue_assets() {
     wp_enqueue_style(
         'exf-style',
-        get_stylesheet_uri(),
+        get_template_directory_uri() . '/css/main.css',
         array(),
         '1.0.0'
     );

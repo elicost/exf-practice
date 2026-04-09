@@ -7,12 +7,4 @@ License: GNU General Public License v2 or later
 Text Domain: exf-theme
 */
 
-/* Base styles — Sass pipeline replaces this on Day 2 */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: sans-serif;
-}
+/* Styles are compiled from sass/main.scss → css/main.css */

@@ -1,0 +1,57 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.site-header {
+    background-color: $color-white;
+    border-bottom: 1px solid $color-border;
+    padding: $space-md 0;
+
+    &__inner {
+        @include flex-row(space-between, center);
+        max-width: $container-max-width;
+        margin: 0 auto;
+        padding: 0 $container-padding;
+    }
+
+    &__logo {
+        font-family: $font-primary;
+        font-size: $font-size-lg;
+        font-weight: bold;
+        color: $color-dark;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-primary;
+            text-decoration: none;
+        }
+    }
+
+    &__nav {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            @include flex-row(flex-end, center, $space-lg);
+        }
+
+        a {
+            font-family: $font-secondary;
+            font-size: $font-size-base;
+            color: $color-dark;
+            text-decoration: none;
+            font-weight: 500;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    @include respond-to('tablet') {
+        &__inner {
+            flex-direction: column;
+            gap: $space-md;
+            text-align: center;
+        }
+    }
+}
