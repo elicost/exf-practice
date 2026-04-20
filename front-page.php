@@ -36,16 +36,16 @@
         <div class="container">
             <div class="cards__grid">
                 <div class="card">
-                    <h3 class="card__title">Strategy</h3>
-                    <p class="card__body">We help brands find their footing and build toward something that lasts.</p>
+                    <h3 class="card__title">Value</h3>
+                    <p class="card__body">Wholesale pricing, no overhead. Your team gets great coffee every week without the markup of a café or the hassle of running to the store.</p>
                 </div>
                 <div class="card">
-                    <h3 class="card__title">Design</h3>
-                    <p class="card__body">Thoughtful interfaces built for real people, not just design portfolios.</p>
+                    <h3 class="card__title">Variety</h3>
+                    <p class="card__body">Rotating single-origins and seasonal blends from The Annex's full lineup. Never the same bag twice unless you want it to be.</p>
                 </div>
                 <div class="card">
-                    <h3 class="card__title">Development</h3>
-                    <p class="card__body">Clean code, proper structure, and sites that editors can actually use.</p>
+                    <h3 class="card__title">Versatility</h3>
+                    <p class="card__body">Whole bean or ground, weekly or biweekly, any quantity. The program flexes around your office — not the other way around.</p>
                 </div>
             </div>
         </div>
