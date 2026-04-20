@@ -45,6 +45,13 @@
                 color: $color-primary;
             }
         }
+
+        // WordPress adds .current-menu-item to the active page's nav item
+        .current-menu-item a {
+            color: $color-primary;
+            border-bottom: 2px solid $color-primary;
+            padding-bottom: 2px;
+        }
     }
 
     @include respond-to('tablet') {
