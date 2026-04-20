@@ -2,13 +2,35 @@
 
 <main class="site-main">
 
-    <section class="hero">
+    <?php
+    $hero_bg         = get_field('hero_background');
+    $hero_heading    = get_field('hero_heading')    ?: 'Built for the Modern Web.';
+    $hero_subheading = get_field('hero_subheading') ?: 'A classic WordPress theme with ACF, Sass, and clean PHP templates.';
+    $hero_class      = $hero_bg ? 'hero hero--has-bg' : 'hero';
+    $hero_style      = $hero_bg ? ' style="background-image: url(\'' . esc_url( $hero_bg['url'] ) . '\');"' : '';
+    ?>
+    <section class="<?php echo $hero_class; ?>"<?php echo $hero_style; ?>>
         <div class="container">
-            <h1 class="hero__heading">Built for the Modern Web.</h1>
-            <p class="hero__subheading">A classic WordPress theme with ACF, Sass, and clean PHP templates.</p>
+            <h1 class="hero__heading"><?php echo esc_html( $hero_heading ); ?></h1>
+            <p class="hero__subheading"><?php echo esc_html( $hero_subheading ); ?></p>
             <a href="#" class="hero__cta">Get Started</a>
         </div>
     </section>
+
+    <?php
+    $section_title = get_field('section_title') ?: 'What We Do';
+    $section_body  = get_field('section_body');
+    ?>
+    <?php if ( $section_title || $section_body ) : ?>
+    <section class="content-section">
+        <div class="container">
+            <h2 class="content-section__title"><?php echo esc_html( $section_title ); ?></h2>
+            <?php if ( $section_body ) : ?>
+                <div class="content-section__body"><?php echo wp_kses_post( $section_body ); ?></div>
+            <?php endif; ?>
+        </div>
+    </section>
+    <?php endif; ?>
 
     <section class="cards">
         <div class="container">

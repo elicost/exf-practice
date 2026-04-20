@@ -1,0 +1,47 @@
+@use 'sass:color';
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.content-section {
+    padding: $space-xl 0;
+    background-color: $color-white;
+    border-bottom: 1px solid $color-border;
+
+    &__title {
+        font-family: $font-primary;
+        font-size: $font-size-xl;
+        color: $color-dark;
+        margin: 0 0 $space-lg;
+
+        @include respond-to('tablet') {
+            font-size: $font-size-lg;
+        }
+    }
+
+    &__body {
+        max-width: 720px; // keep long-form text comfortable to read
+
+        p {
+            font-size: $font-size-base;
+            line-height: 1.8;
+            color: color.adjust($color-dark, $lightness: 15%);
+            margin: 0 0 $space-md;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        h2, h3 {
+            font-family: $font-primary;
+            color: $color-dark;
+            margin: $space-lg 0 $space-sm;
+        }
+
+        ul, ol {
+            padding-left: $space-lg;
+            line-height: 1.8;
+            color: color.adjust($color-dark, $lightness: 15%);
+        }
+    }
+}

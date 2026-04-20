@@ -7,6 +7,26 @@
     padding: $space-xl 0;
     text-align: center;
 
+    // When a background image is set via ACF
+    &--has-bg {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+
+        // Dark overlay so text stays readable over any image
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            position: relative; // sit above the overlay
+        }
+    }
+
     &__heading {
         font-family: $font-primary;
         font-size: $font-size-xxl;

@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use 'variables' as *;
 
 .site-footer {
@@ -16,6 +17,6 @@
     p {
         margin: 0;
         font-size: $font-size-sm;
-        color: lighten($color-dark, 60%);
+        color: color.adjust($color-dark, $lightness: 60%);
     }
 }
